@@ -1,0 +1,225 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4028 U4
+U 1 1 5F3164E3
+P 3500 1750
+F 0 "U4" H 3500 2631 50  0000 C CNN
+F 1 "4028" H 3500 2540 50  0000 C CNN
+F 2 "" H 3500 1750 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4028bms.pdf" H 3500 1750 50  0001 C CNN
+	1    3500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5F31B50C
+P 3500 1050
+F 0 "#PWR018" H 3500 900 50  0001 C CNN
+F 1 "+5V" H 3515 1223 50  0000 C CNN
+F 2 "" H 3500 1050 50  0001 C CNN
+F 3 "" H 3500 1050 50  0001 C CNN
+	1    3500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR019
+U 1 1 5F31B6F4
+P 3500 2550
+F 0 "#PWR019" H 3500 2300 50  0001 C CNN
+F 1 "GNDD" H 3504 2395 50  0000 C CNN
+F 2 "" H 3500 2550 50  0001 C CNN
+F 3 "" H 3500 2550 50  0001 C CNN
+	1    3500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx_IEEE:4520 U3
+U 2 1 5F31D265
+P 2450 4050
+F 0 "U3" H 2450 3702 50  0000 C CNN
+F 1 "4520" H 2450 3611 50  0000 C CNN
+F 2 "" H 2450 4050 50  0001 C CNN
+F 3 "" H 2450 4050 50  0001 C CNN
+	2    2450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5F3243AA
+P 2400 1450
+F 0 "#PWR017" H 2400 1300 50  0001 C CNN
+F 1 "+5V" H 2415 1623 50  0000 C CNN
+F 2 "" H 2400 1450 50  0001 C CNN
+F 3 "" H 2400 1450 50  0001 C CNN
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+Text Label 1600 1500 0    50   ~ 0
+Clock
+Wire Wire Line
+	1600 1500 1850 1500
+Wire Wire Line
+	2950 1550 3000 1550
+Wire Wire Line
+	2950 1650 3000 1650
+Wire Wire Line
+	2950 1750 3000 1750
+Wire Wire Line
+	2950 1850 3000 1850
+$Comp
+L power:GNDD #PWR016
+U 1 1 5F32563E
+P 1850 1850
+F 0 "#PWR016" H 1850 1600 50  0001 C CNN
+F 1 "GNDD" H 1854 1695 50  0000 C CNN
+F 2 "" H 1850 1850 50  0001 C CNN
+F 3 "" H 1850 1850 50  0001 C CNN
+	1    1850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx_IEEE:4520 U3
+U 1 1 5F31C235
+P 2400 1700
+F 0 "U3" H 2400 1352 50  0000 C CNN
+F 1 "4520" H 2400 1261 50  0000 C CNN
+F 2 "" H 2400 1700 50  0001 C CNN
+F 3 "" H 2400 1700 50  0001 C CNN
+	1    2400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1850 1850 1650
+Connection ~ 1850 1850
+$Comp
+L 4xxx:4081 U2
+U 1 1 5F327589
+P 1500 3850
+F 0 "U2" H 1500 4175 50  0000 C CNN
+F 1 "4081" H 1500 4084 50  0000 C CNN
+F 2 "" H 1500 3850 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 1500 3850 50  0001 C CNN
+	1    1500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1550 3000 1200
+Wire Wire Line
+	3000 1200 1000 1200
+Wire Wire Line
+	1000 1200 1000 3950
+Wire Wire Line
+	1000 3950 1200 3950
+Connection ~ 3000 1550
+Wire Wire Line
+	1200 3750 1200 2400
+Wire Wire Line
+	1200 2400 3000 2400
+Wire Wire Line
+	3000 2400 3000 1850
+Connection ~ 3000 1850
+Wire Wire Line
+	1800 3850 1900 3850
+$Comp
+L power:GNDD #PWR015
+U 1 1 5F32DDA2
+P 1750 4000
+F 0 "#PWR015" H 1750 3750 50  0001 C CNN
+F 1 "GNDD" H 1754 3845 50  0000 C CNN
+F 2 "" H 1750 4000 50  0001 C CNN
+F 3 "" H 1750 4000 50  0001 C CNN
+	1    1750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4000 1900 4000
+$Comp
+L 4xxx:4081 U2
+U 2 1 5F32FCF6
+P 2450 4900
+F 0 "U2" H 2450 5225 50  0000 C CNN
+F 1 "4081" H 2450 5134 50  0000 C CNN
+F 2 "" H 2450 4900 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 2450 4900 50  0001 C CNN
+	2    2450 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR021
+U 1 1 5F31BD35
+P 3700 4900
+F 0 "#PWR021" H 3700 4650 50  0001 C CNN
+F 1 "GNDD" H 3704 4745 50  0000 C CNN
+F 2 "" H 3700 4900 50  0001 C CNN
+F 3 "" H 3700 4900 50  0001 C CNN
+	1    3700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 5F31AF5C
+P 3700 3400
+F 0 "#PWR020" H 3700 3250 50  0001 C CNN
+F 1 "+5V" H 3715 3573 50  0000 C CNN
+F 2 "" H 3700 3400 50  0001 C CNN
+F 3 "" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4028 U5
+U 1 1 5F317AEB
+P 3700 4100
+F 0 "U5" H 3700 4981 50  0000 C CNN
+F 1 "4028" H 3700 4890 50  0000 C CNN
+F 2 "" H 3700 4100 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4028bms.pdf" H 3700 4100 50  0001 C CNN
+	1    3700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4100 3050 4100
+Wire Wire Line
+	3050 4100 3050 4800
+Wire Wire Line
+	3050 4800 2750 4800
+Wire Wire Line
+	2750 5000 3100 5000
+Wire Wire Line
+	3100 5000 3100 4000
+Wire Wire Line
+	3000 4000 3100 4000
+Wire Wire Line
+	3000 4200 3200 4200
+Wire Wire Line
+	3000 3900 3200 3900
+Wire Wire Line
+	3100 4000 3200 4000
+Connection ~ 3100 4000
+Wire Wire Line
+	3200 4100 3050 4100
+Connection ~ 3050 4100
+Wire Wire Line
+	1900 4200 1900 4900
+Wire Wire Line
+	1900 4900 2150 4900
+Text Label 1600 4900 0    50   ~ 0
+Minute
+Wire Wire Line
+	1600 4900 1900 4900
+Connection ~ 1900 4900
+$EndSCHEMATC
